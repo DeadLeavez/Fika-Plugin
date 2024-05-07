@@ -315,11 +315,11 @@ namespace Fika.Core
 
             // Performance
 
-            DynamicAIPMC = Config.Bind("Performance", "Dynamic AI PMC", false, new ConfigDescription("Use the dynamic AI system, disabling PMC AI when they are outside of any player's range.", tags: new ConfigurationManagerAttributes() { Order = 7 }));
+            DynamicAIPMC = Config.Bind("Performance", "Dynamic AI PMC", false, new ConfigDescription("Use the dynamic AI system, disabling PMC AI when they are outside of any player's range. NOTE: The vanilla AI will attack disabled AIs.", tags: new ConfigurationManagerAttributes() { Order = 7 }));
 
-            DynamicAIScav = Config.Bind("Performance", "Dynamic AI SCAV", false, new ConfigDescription("Use the dynamic AI system, disabling SCAV AI when they are outside of any player's range.", tags: new ConfigurationManagerAttributes() { Order = 6 }));
+            DynamicAIScav = Config.Bind("Performance", "Dynamic AI SCAV", false, new ConfigDescription("Use the dynamic AI system, disabling SCAV AI when they are outside of any player's range. NOTE: The vanilla AI will attack disabled AIs.", tags: new ConfigurationManagerAttributes() { Order = 6 }));
 
-            DynamicAIRest = Config.Bind("Performance", "Dynamic AI REST", false, new ConfigDescription("Use the dynamic AI system, disabling AI that arent Scavs or PMCs when they are outside of any player's range.", tags: new ConfigurationManagerAttributes() { Order = 5 }));
+            DynamicAIRest = Config.Bind("Performance", "Dynamic AI REST", false, new ConfigDescription("Use the dynamic AI system, disabling AI that arent Scavs or PMCs when they are outside of any player's range. NOTE: The vanilla AI will attack disabled AIs.", tags: new ConfigurationManagerAttributes() { Order = 5 }));
 
             DynamicAIRange = Config.Bind("Performance", "Dynamic AI Range", 100f, new ConfigDescription("The range at which AI will be disabled dynamically.", new AcceptableValueRange<float>(50f, 750f), new ConfigurationManagerAttributes() { Order = 4 }));
 
